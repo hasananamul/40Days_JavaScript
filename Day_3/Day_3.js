@@ -122,7 +122,28 @@ let count = 5 // `101`
 // 2 / 2 = 1(0)
 
 let doubling = count << 1; //1010 Bitwise left << shift 1;
-let biwiseRightShift = count << 1; //010 Bitwise right >> shift 1;
+let biwiseRightShift = count >> 1; //010 Bitwise right >> shift 1;
 // 1010 = 0 * (2**0) + 1 * (2**1) + 0 * (2**2) + 1 * (2**3) = 10; //Left shift <<
 // 010 = 0 * (2**0) + 1 * (2**1) + 0 *(2**2) = 2;//Right shift >>
-console.log(doubling);
+console.log("Bitwise doubling (left shift) of 1 = " + doubling);
+console.log("Bitwise right shift 1 = " + biwiseRightShift);
+
+let x = 10;
+//x += 5 ; x = x + 5
+//x -= 5 ; x = x - 5
+//x *= 5 ; x = x * 5
+//x /= 5 ; x = x / 5
+
+x = x + 5
+x = x - 5
+x = x * 5
+x = x / 5
+console.log(x += 5);
+console.log(x -= 5);
+console.log(x *= 5);
+console.log(x /= 5);
+
+console.log(x = x + 5);
+console.log(x = x - 5);
+console.log(x = x * 5);
+console.log(x = x / 5);
